@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link2, Copy, Trash2, BarChart3, LogOut, Menu, X, RefreshCw } from 'lucide-react';
 
-const API_URL = import.meta.env.VITE_API_URL;
+const API_URL = "https://url-shortner-project-u4u7.onrender.com";
 
 function App() {
   const [user, setUser] = useState(null);
