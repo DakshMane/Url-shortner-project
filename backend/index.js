@@ -8,7 +8,7 @@ const {userMustbeloggedIn} = require("./middleware/auth")
 const app = express()
 const cors = require("cors")
 app.use(cors({
-  origin : process.env.FRONTEND_URL ,
+  origin : "https://url-shortner-project-git-main-dakshmanes-projects.vercel.app",
   credentials : true
 }))
 
