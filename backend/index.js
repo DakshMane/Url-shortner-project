@@ -7,10 +7,11 @@ const cookieParser = require("cookie-parser")
 const {userMustbeloggedIn} = require("./middleware/auth")
 const app = express()
 const cors = require("cors")
-app.use("*" , cors({
-  origin : "https://url-shortner-project-git-main-dakshmanes-projects.vercel.app",
-  credentials : true
-}))
+app.options("/*", cors({
+  origin: "https://url-shortner-project-git-main-dakshmanes-projects.vercel.app",
+  credentials: true,
+}));
+
 
 app.use(express.json())
 connectDb(
